@@ -1,0 +1,35 @@
+﻿---
+ID: "117a1204-7562-4cfb-9b3e-3cbace5f57ce"
+Parent: "db662edf-5965-4848-ad14-ba6bf0d55d1e"
+Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Manage Child Items
+DB: core
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_font.png
+- ID: "1bb289d6-44d7-4fcc-af15-db32b841f957"
+  Hint: Click
+  Value: "webedit:managecontent"
+- ID: "e8cc41c7-c304-4282-b782-e21ca32d324c"
+  Hint: Icon
+  Value: Office/16x16/window_font.png
+Languages:
+- Language: en
+  Fields:
+  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
+    Hint: Tooltip
+    Value: Manage child items
+  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
+    Hint: Header
+    Value: Manage child items
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120222T091100Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

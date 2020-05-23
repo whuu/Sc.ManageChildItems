@@ -1,0 +1,109 @@
+﻿.main-grid
+{
+  border: 1px solid #D5D5D5;
+  border-right: none;
+  table-layout:fixed;
+}
+
+#sort-list
+{ 
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.sort-item
+{
+  display: block;
+  padding: 4px;
+  padding-bottom: 3px;
+  line-height: 23px;
+  border-bottom: 1px solid #EAEAEA;
+  vertical-align:middle;
+  zoom: 1;
+  white-space: nowrap;  
+}
+
+.sort-item.non-editable
+{
+  color: #999;
+  cursor: default;
+}
+
+.sort-item.non-editable .drag-handle
+{
+  display: none;  
+}
+
+.sort-item.hover, .sort-item.editable:hover
+{
+  background-color: #ECF7FD;
+  border: 1px solid #D8F0FA;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.sort-item.selected
+{
+  background: #D1EDFC url("/sitecore/shell/Themes/Standard/Images/Personalization/PresetRowSelected.png") center left repeat-x;
+  border: 1px solid #99DEFD;
+  padding: 3px;
+}
+
+.item-icon
+{
+  margin: 4px;
+  vertical-align:middle;  
+}
+
+.sort-item.non-editable .item-icon
+{
+  margin-left: 13px;
+}
+
+.item-name
+{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+}
+
+.drag-handle
+{
+  vertical-align:middle;
+  cursor: move;
+}
+
+.commands-cell
+{
+  border-left: 1px solid #D5D5D5;
+  background-color: #F7F7F7;
+  width: 124px;
+}
+
+.commands-container
+{
+  padding: 8px;  
+}
+
+.commands-container div
+{
+  margin: 16px 0;
+}
+
+.commands-container button
+{
+  width: 100% !important;
+}
+
+.sort-item.deleted{ 
+  display:none;
+}
+
+
+
+
+
+
+
+

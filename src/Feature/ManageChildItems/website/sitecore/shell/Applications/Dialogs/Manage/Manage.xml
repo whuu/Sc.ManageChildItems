@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+  <Sitecore.Shell.Applications.Dialogs.Manage>
+    <FormDialog Icon="WordProcessing/32x32/line_spacing_h.png" Header="Manage Content Items" TextCssClass="scDialogTextWithPadding"
+      Text="Arrange the content items in the order that you want. Use the buttons to move content items up or down. You can also drag and drop items to rearrange their sort order.">
+      <CodeBeside Type="My.Feature.ManageChildItems.Dialogs.ManageForm, My.Feature.ManageChildItems"/>
+      <Stylesheet Src="/sitecore/shell/Applications/Dialogs/Manage/Manage.css" DeviceDependant="false" />
+      <Script Src="/sitecore/shell/Controls/Lib/scriptaculous/scriptaculous.js?load=effects,dragdrop"></Script>
+      <Script Src="/sitecore/shell/Applications/Dialogs/Manage/Manage.js" />
+      <GridPanel Class="main-grid" Columns="2" GridPanel.Height="100%" Width="100%" Height="100%">
+        <Scrollbox Border="0" Padding="0" Class="scScrollbox scFixSize" Height="100%" Width="100%" GridPanel.Height="100%" ID="MainContainer">
+          <div style="text-align:center;margin-top:16px;">
+            <Literal Text="There should be at least two content items to enable sorting." />         
+          </div>        
+        </Scrollbox>
+        
+        <Border Class="commands-container" GridPanel.Class="commands-cell" GridPanel.VAlign="top">
+          <Border>
+            <Button ID="MoveUp" Click="javascript:scMoveUp()" Disabled="true" Header="Move Up"/>
+          </Border>
+          <Border>
+            <Button ID="MoveDown" Click="javascript:scMoveDown()" Disabled="true" Header="Move Down"/>
+          </Border>
+          <Border>
+            <Button ID="Edit" Click="javascript:scEdit()" Disabled="true" Header="Edit"/>
+          </Border>
+          <Border>
+			      <Button ID="Delete" Click="javascript:scDelete()" Disabled="true" Header="Delete"/>
+		      </Border>		  
+        </Border>
+      </GridPanel>    
+    </FormDialog>
+  </Sitecore.Shell.Applications.Dialogs.Manage>
+</control>

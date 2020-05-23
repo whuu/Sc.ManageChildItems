@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>My.Feature.ManageChildItems</RootNamespace>
+    <AssemblyName>My.Feature.ManageChildItems</AssemblyName>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<NoWarn>$(NoWarn),1591,SA1633,SA1404</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="App_Config\Include\Feature\Feature.ManageChildItems.config" />
+    <None Remove="App_Config\Include\Feature\Feature.ManageChildItems.Serialization.config" />
+    <None Remove="sitecore\shell\Applications\Dialogs\Manage\Manage.css" />
+    <None Remove="sitecore\shell\Applications\Dialogs\Manage\Manage.js" />
+    <None Remove="sitecore\shell\Applications\Dialogs\Manage\Manage.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Feature.ManageChildItems.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Config\Include\Feature\Feature.ManageChildItems.Serialization.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sitecore\shell\Applications\Dialogs\Manage\Manage.css" />
+    <Content Include="sitecore\shell\Applications\Dialogs\Manage\Manage.js" />
+    <Content Include="sitecore\shell\Applications\Dialogs\Manage\Manage.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Sitecore.ExperienceEditor" Version="9.3.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
