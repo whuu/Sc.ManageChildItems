@@ -3,9 +3,9 @@
 ![Manage Child Items](documentation/Manage-Child-Items.png)
 
 ## Usage
-* Add command to your rendering item:
+* Add "Manage Child Items" command to your rendering item:
 ![Toolbar Button Manage Items](documentation/Toolbar-Button-Manage-Items.png)
-* In Experience Editor select component and click on new toolbox button to sort, delete or edit its child items.
+* In Experience Editor select a component and click on new toolbox button to sort, delete or edit datasource child items.
 
 ## Setup Instructions
 * Repository contains both code and Sitecore item needed serialized with Unicorn.
